@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Courier";
+  background-color: #faf0e6; /* Tom de fundo mais suave */
+  color: #8b0000; /* Tom vinho escuro para o texto */
+}
+
+img {
+  height: 400px;
+  width: auto;
+  padding: 10px;
+}
+
+#valentineQuestion {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #a52a2a; /* Tom vinho médio para o título */
+}
+
+.answerButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Courier";
+  margin-bottom: 20px;
+  background-color: #dca3a3; /* Tom vinho suave para o botão */
+  color: #4b0000; /* Vinho escuro para o texto do botão */
+  border-radius: 12px;
+  border: 2px solid #dca3a3;
+  box-shadow: 1px 1px 2px #8b0000; /* Sombra em tom vinho escuro */
+  transition: 0.3s;
+}
+
+.answerButton:hover {
+  background-color: #8b0000; /* Vinho escuro no hover */
+  color: #faf0e6; /* Texto claro para contraste */
+  border: 2px solid #8b0000;
+  box-shadow: 1px 1px 2px #dca3a3;
+}

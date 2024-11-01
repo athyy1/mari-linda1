@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai comigo?</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+    <style>
+        /* Ajuste do tamanho do GIF */
+        .responsive {
+            width: 200px; /* Ajuste o tamanho desejado */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="valentineQuestion"><b>Quer sair em um encontro comigo?</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">
+        Sim!
+    </button>
+    <button class="answerButton" id="noButton">Não, sai fora!</button>
+    <br />
+    <img src="marry.gif" alt="oi rsrs" class="responsive" />
+
+    <script>
+        document
+            .getElementById("noButton")
+            .addEventListener("click", function () {
+                var yesButton = document.querySelector(
+                    'button[onclick*="thankyou.html"]'
+                );
+                var currentFontSize = parseInt(
+                    window.getComputedStyle(yesButton).fontSize
+                );
+                yesButton.style.fontSize = currentFontSize + 10 + "px"; // Aumenta o tamanho da fonte em 10px
+            });
+    </script>
+</body>
+</html>

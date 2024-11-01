@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Marina!</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonte manuscrita do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <!-- Biblioteca de efeito de digitação -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <style>
+        /* Aplica a fonte manuscrita */
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5em; /* Ajuste o tamanho da fonte conforme desejado */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Texto animado principal -->
+        <div id="app"></div>
+        
+        <!-- Envelope e carta no centro -->
+        <div class="letter-image" id="envelope">
+            <div class="animated-mail">
+                <div class="back-fold"></div>
+                <div class="letter">
+                    <div class="letter-border"></div>
+                    <div class="letter-context-body handwritten">
+                        <p><strong><span style="color: #800020;">Mari</span>,<br>minha</strong> linda mulher.<br> Fiz essa surpresa para você!<br> Dica: Aperte no <span style="color: #8B4513;">cachorro</span>!</p>
+                    </div>
+                    <div class="letter-stamp">
+                        <div class="letter-stamp-inner"></div>
+                    </div>
+                </div>
+                <div class="top-fold"></div>
+                <div class="body"></div>
+                <div class="left-fold"></div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+
+        <!-- Emoji do cachorro clicável, oculto inicialmente -->
+        <a href="naoindex.html" class="dog-emoji" id="dog-emoji">🐶</a>
+    </div>
+
+    <script src="javascript/script.js"></script>
+    <script>
+        // JavaScript para exibir o emoji de cachorro após a primeira abertura
+        document.getElementById("envelope").addEventListener("mouseenter", function() {
+            document.getElementById("dog-emoji").classList.add("show");
+        });
+    </script>
+</body>
+</html>

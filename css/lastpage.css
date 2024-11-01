@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Courier";
+  background-color: #faf0e6; /* Tom suave próximo ao vinho */
+  color: #5a2a2a; /* Tom de vinho escuro para o texto */
+}
+
+#thankyou {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #7b3f3f; /* Tom médio de vinho */
+}
+
+#rizz {
+  width: 300px; /* Tamanho da imagem */
+  height: 300px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 3px solid #7b3f3f; /* Borda em tom de vinho médio */
+  box-shadow: 2px 2px 8px #5a2a2a; /* Sombra em tom vinho escuro */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Courier";
+  margin-bottom: 20px;
+  background-color: #dca3a3; /* Vinho suave para o fundo do botão */
+  color: #4b0000; /* Vinho escuro para o texto do botão */
+  border-radius: 12px;
+  border: 2px solid #dca3a3;
+  box-shadow: 1px 1px 2px #7b3f3f; /* Sombra em tom vinho médio */
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #5a2a2a; /* Vinho escuro no hover */
+  color: #faf0e6; /* Texto claro para contraste */
+  border: 2px solid #5a2a2a;
+  box-shadow: 1px 1px 2px #dca3a3; /* Sombra em tom suave */
+}
